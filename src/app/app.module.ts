@@ -10,11 +10,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatFormFieldModule} from '@angular/material/form-field'
 import {MatSidenavModule} from '@angular/material/sidenav';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { RxjsLearningComponent } from './rxjs-learning/rxjs-learning.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RxjsLearningComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +25,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatButtonModule,
     MatSlideToggleModule,
     MatFormFieldModule,
-    MatSidenavModule 
+    MatSidenavModule,
+    ReactiveFormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
